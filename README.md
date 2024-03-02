@@ -4,9 +4,7 @@ A greenfield project to explore ideas presented in [Build and Deploy a Modern UI
 
 ## Getting started
 
-### Create a new Vite project with Tailwind CSS
-
-Here is my cheat sheet to get started with the initial setup for our project:
+Create a new Vite project with Tailwind CSS:
 
 ```sh
 # Install Tailwind CSS with Vite - https://tailwindcss.com/docs/guides/vite
