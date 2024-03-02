@@ -19,6 +19,7 @@ npm install
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 
-## Configure your template paths by modifying the content property of tailwind.config.js
+## Configure your template paths by modifying the content property of ./tailwind.config.js
+## Add the Tailwind directives to your CSS at ./src/index.css
 
 ```
