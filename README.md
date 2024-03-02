@@ -22,4 +22,6 @@ npx tailwindcss init -p
 ## Configure your template paths by modifying the content property of ./tailwind.config.js
 ## Add the Tailwind directives to your CSS at ./src/index.css
 
+## Start using Tailwind CSS + Vite
+npm run dev
 ```
