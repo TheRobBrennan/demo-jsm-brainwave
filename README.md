@@ -12,4 +12,7 @@ Here is my cheat sheet to get started with the initial setup for our project:
 ## Create a new Vite project
 npm create vite@latest ./ -- --template react
 
+## Install dependencies
+npm install
+
 ```
