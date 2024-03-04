@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useLocation } from 'react-router-dom'
+import { disablePageScroll, enablePageScroll } from 'scroll-lock'
 
 import { brainwave } from '../assets'
 import { navigation } from '../constants'
@@ -14,13 +15,17 @@ const Header = () => {
   const toggleNavigation = () => {
     if (openNavigation) {
       setOpenNavigation(false)
+      enablePageScroll() // Enable scrolling when the mobile menu is closed
     } else {
       setOpenNavigation(true)
-
+      disablePageScroll() // Prevent scrolling when the mobile menu is open
     }
   }
 
   const handleClick = () => {
+    if (!openNavigation) return
+
+    enablePageScroll()
     setOpenNavigation(false)
   }
 
