@@ -15,12 +15,17 @@ const Services = () => {
   return (
     <Section id="how-to-use">
       <div className="container">
+
+        {/* Heading and subheading */}
         <Heading
           title="Generative AI made for creators."
           text="Brainwave unlocks the potential of AI-powered applications"
         />
 
+        {/* Bento box */}
         <div className="relative">
+
+          {/* Primary focus - Smartest AI */}
           <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
               <img
@@ -53,7 +58,11 @@ const Services = () => {
             <Generating className="absolute left-4 right-4 bottom-4 border-n-1/10 border lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2" />
           </div>
 
+          {/* Bento box with two sections instead of one big one */}
+          {/* NOTE: We are using grid here in addition to flex from above 🤓 */}
           <div className="relative z-1 grid gap-5 lg:grid-cols-2">
+
+            {/* Secondary focus - Left side */}
             <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
               <div className="absolute inset-0">
                 <img
@@ -76,6 +85,7 @@ const Services = () => {
               <PhotoChatMessage />
             </div>
 
+            {/* Secondary focus - Right side */}
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="py-12 px-4 xl:px-8">
                 <h4 className="h4 mb-4">Video generation</h4>
@@ -84,13 +94,16 @@ const Services = () => {
                   engine. What will you create?
                 </p>
 
+                {/* Create a list of our services icons */}
                 <ul className="flex items-center justify-between">
                   {brainwaveServicesIcons.map((item, index) => (
                     <li
                       key={index}
+                      // Let's style the third item differently so it stands out as the primary focus
+                      // Padding will control how much of the circle we can or cannot see (try p-0.3 as an example)
                       className={`rounded-2xl flex items-center justify-center ${index === 2
-                          ? "w-[3rem] h-[3rem] p-0.25 bg-conic-gradient md:w-[4.5rem] md:h-[4.5rem]"
-                          : "flex w-10 h-10 bg-n-6 md:w-15 md:h-15"
+                        ? "w-[3rem] h-[3rem] p-0.25 bg-conic-gradient md:w-[4.5rem] md:h-[4.5rem]"
+                        : "flex w-10 h-10 bg-n-6 md:w-15 md:h-15"
                         }`}
                     >
                       <div
@@ -122,6 +135,7 @@ const Services = () => {
             </div>
           </div>
 
+          {/* Subtle visual effect that may be barely noticeable unless viewed on desktop */}
           <Gradient />
         </div>
       </div>
