@@ -11,7 +11,7 @@ const DemoPage = () => {
     id="hero"
   >
     <Header />
-    <div className="container relative z-1 max-w-[62rem] mx-auto text-center align-top mt-1">
+    <div className="container relative z-1 max-w-[62rem] mx-auto text-center align-top">
       DEMO: This is an empty page.
     </div>
     <Footer />
