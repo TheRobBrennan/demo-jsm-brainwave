@@ -8,20 +8,27 @@ import { Gradient } from "./design/Roadmap"
 
 const Roadmap = () => (
   <Section className="overflow-hidden" id="roadmap">
+    {/* Container */}
     <div className="container md:pb-10">
       <Heading tag="Ready to get started" title="What we’re working on" />
 
+      {/* Roadmap */}
       <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
         {roadmap.map((item) => {
           const status = item.status === "done" ? "Done" : "In progress"
 
+          // Roadmap item card
           return (
             <div
               className={`md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] ${item.colorful ? "bg-conic-gradient" : "bg-n-6"
                 }`}
               key={item.id}
             >
+
+              {/* Layout */}
               <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
+
+                {/* Background grid image */}
                 <div className="absolute top-0 left-0 max-w-full">
                   <img
                     className="w-full"
@@ -31,6 +38,8 @@ const Roadmap = () => (
                     alt="Grid"
                   />
                 </div>
+
+                {/* Roadmap item */}
                 <div className="relative z-1">
                   <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
                     <Tagline>{item.date}</Tagline>
