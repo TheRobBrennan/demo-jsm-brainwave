@@ -8,6 +8,8 @@ const Pricing = () => {
   return (
     <Section className="overflow-hidden" id="pricing">
       <div className="container relative z-2">
+
+        {/* Sphere */}
         <div className="hidden relative justify-center mb-[6.5rem] lg:flex">
           <img
             src={smallSphere}
@@ -16,6 +18,8 @@ const Pricing = () => {
             height={255}
             alt="Sphere"
           />
+
+          {/* Add stars around the sphere using absolute positioning so the sphere isn't impacted by their positioning */}
           <div className="absolute top-1/2 left-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
             <img
               src={stars}
@@ -27,17 +31,20 @@ const Pricing = () => {
           </div>
         </div>
 
+        {/* Heading where the tag is displayed above the title */}
         <Heading
           tag="Get started with Brainwave"
           title="Pay once, use forever"
         />
 
+        {/* Pricing List */}
         <div className="relative">
           <PricingList />
           <LeftLine />
           <RightLine />
         </div>
 
+        {/* See full details */}
         <div className="flex justify-center mt-10">
           <a
             className="text-xs font-code font-bold tracking-wider uppercase border-b"
