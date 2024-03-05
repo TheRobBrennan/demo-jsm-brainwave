@@ -1,4 +1,6 @@
+import Header from '../components/Header'
 import Section from "../components/Section"
+import Footer from "../components/Footer"
 
 const DemoPage = () => {
   return (<Section
@@ -8,9 +10,11 @@ const DemoPage = () => {
     customPaddings
     id="hero"
   >
-    <div className="container relative z-1 max-w-[62rem] mx-auto text-center align-top">
-      Demo Page Content
+    <Header />
+    <div className="container relative z-1 max-w-[62rem] mx-auto text-center align-top mt-1">
+      DEMO: This is an empty page.
     </div>
+    <Footer />
   </Section>
   )
 }
